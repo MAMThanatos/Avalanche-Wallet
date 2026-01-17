@@ -3,37 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avalanche Wallet</title>
+    <title>Avalanche dApp</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="card">
-        <div class="glow-bar"></div>
-        <div class="card-content">
-            <div class="icon-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                </svg>
-            </div>
-
-            <h1>Avalanche Wallet</h1>
-            
-            <p class="description">
-                Selamat datang. Hubungkan dompet Anda untuk mengakses ekosistem blockchain Avalanche dengan aman.
-            </p>
-
-            <a href="https://wallet.avax.network" class="btn-connect">
-                <span>Connect Wallet</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                </svg>
-            </a>
-
-            <p class="footer-text">Secured by Avalanche Network</p>
+        
+        <div class="card-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 12h20M12 2v20M20 20l-5-5M4 4l5 5M4 20l5-5M20 4l-5 5"/>
+            </svg>
+            <h1>Avalanche dApp</h1>
         </div>
+        
+        <p class="subtitle">Connect Wallet (Core Wallet)</p>
+
+        <a href="#" id="connectBtn" class="btn-connect">
+            Connect Wallet
+        </a>
+
+        <div class="info-container">
+            <div class="info-row">
+                <span class="label">Status:</span>
+                <span class="value" id="statusText">Not Connected</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Wallet Address:</span>
+                <span class="value address" id="addressText">-</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Network:</span>
+                <span class="value" id="networkText">-</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Balance:</span>
+                <span class="value" id="balanceText">- AVAX</span>
+            </div>
+        </div>
+
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
